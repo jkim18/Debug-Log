@@ -1,0 +1,20 @@
+i. I tried to create a class Rect, so a new rectangle would be drawn every time a note was pressed. 
+
+ii. I was able to successfully create rectangles that appeared and disappeared on the press/release of a note, but when I tried
+adding to the code, I accidently did something to the previous code that made the class not work anymore. 
+
+iii. I think it was a matter of the wrong placement of variables and code that was preventing it from working. 
+
+iv. I tried to switch some variables around and change some commands. Unfortunately, no matter what I tried I couldn't remember
+what the correct code was from before. 
+
+iii. I did not have an x integer under the constructor Rect(), but I was not sure what it was supposed to be. I had y equal to 
+random(height); and vy equal to random(1);
+
+iv. I needed to add "int x, int y" into the constructor Rect(). Then I could add this.x = x; and thix.y = y
+
+iii. Under void draw(), I had made the integers of rect(pitch*width/maxPitch, y, width/maxPitch, 50); and made the integers for
+rect(x, y, width/maxPitch, 50) in the list.add function. I had also written list.get(pitch), but list.get() does not need an integer.
+
+iv. Under void draw(), rect(x, y, width/maxPitch, 50)
+list.add(new Rect(pitch*width/maxPitch, y, width/maxPitch, 50))
