@@ -1,0 +1,11 @@
+i. Rectangles are drawn when notes are pressed, and fall when they are released. It was doing what I expected.
+
+ii. However, an error that says "ConcurrentModificationException" kept popping up after the animation would freeze.
+
+iii. I thought it was possibly because there was no integer for Rect r
+
+iv. There was no change after adding int Rect r to the code.
+
+v. I eventually asked JD who told me that when one part of the code is running, it interrupts another. Since the code to draw
+new rectangles and the code to move them are in different threads, each one cancels the other out. In order for the code to 
+keep running, "synchronized(this) {" had to be added under void draw(), void noteOn(), and void noteOff().
