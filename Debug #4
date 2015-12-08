@@ -1,0 +1,12 @@
+i. I wanted the rectangles to stay the same color as they fell.
+
+ii. Instead, they turned black after the key was released.
+
+iii. Might have to add the color function into list.add.
+
+iv. Under list.add, I wrote in "color(pitch*3, 255, 255)"
+
+iii. Said the constructor rect(int, int, int) did not exist.
+
+iv. Added color c into constructor "Rect(int x, int y, color c)"
+then added "this.c = c;"
