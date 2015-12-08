@@ -1,0 +1,10 @@
+i. I expected the lowest note to start getting drawn at the end of the screen at the left. 
+
+ii. Instead it started about a fourth from the edge.
+
+iii. I think it might have been because the pitch of the lowest note was written as "28", instead of "0". Might have to do 
+something to the code where it subtracts 28 from 104, which is the highest pitch. Possibly add another integer to set the 
+minPitch.
+
+iv. Created "final int minPitch = 28;" but also have to subtract it from maxPitch 104 in the rect() function. 
+"rect((pitch - minPitch)*width/(maxPitch - minPitch), 100, width/maxPitch, 50);"
