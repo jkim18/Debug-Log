@@ -1,0 +1,7 @@
+i. The sound should have kept playing whenever keys were pressed.
+
+ii. If one note was held down and another note was played, the first note would keep playing, even if you let it go.
+
+iii. Something in the code is wrong, but I'm not sure what it could be. 
+
+iv. The solution was to add wave.play(); under void noteOn, and add wave.stop(); under void noteOff. 
