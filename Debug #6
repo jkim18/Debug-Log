@@ -1,0 +1,20 @@
+i. I wanted the rectangles to fade as they fell.
+
+ii. They stayed the same, but wouldn't fade no matter what I tried. It would either change a different color, go 
+transparent, or not change at all. 
+
+iii. I add float transparency; float dtrans; in the code, then float a = map(transparency, 0, 1, 0, 255); and 
+fill(pitch*3, 255, 255, a); 
+
+iv. This just caused the rectangles to stay the same as they fell.
+
+iii. Also tried adding fill(0xee, 0xee, 0xff, 50); 
+
+iv. This just made the rectangles turn a shade of pink.
+
+iii. I tried to create new rectangles with list.add and make the fill 0
+
+iv. But this only made it turn completely white
+
+
+iii. I am going to keep working with the code until I figure out how to make it fade. 
